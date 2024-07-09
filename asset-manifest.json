@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolio_website/static/css/main.db2c6893.css",
+    "main.js": "/portfolio_website/static/js/main.ceefddac.js",
+    "static/js/453.aac68abc.chunk.js": "/portfolio_website/static/js/453.aac68abc.chunk.js",
+    "static/media/instagram.png": "/portfolio_website/static/media/instagram.c9e3e58c428660ce422a.png",
+    "static/media/facebook.png": "/portfolio_website/static/media/facebook.790642551cd99bb66a7e.png",
+    "static/media/iot_projects.jpg": "/portfolio_website/static/media/iot_projects.76063a34f47cca9ddff7.jpg",
+    "static/media/arduino_projects.jpg": "/portfolio_website/static/media/arduino_projects.f0de6a7d4d806935c4d4.jpg",
+    "static/media/twitter.png": "/portfolio_website/static/media/twitter.57707294f010a051b9d0.png",
+    "static/media/web_development.jpg": "/portfolio_website/static/media/web_development.fd89986f48eaa4d423cf.jpg",
+    "index.html": "/portfolio_website/index.html",
+    "main.db2c6893.css.map": "/portfolio_website/static/css/main.db2c6893.css.map",
+    "main.ceefddac.js.map": "/portfolio_website/static/js/main.ceefddac.js.map",
+    "453.aac68abc.chunk.js.map": "/portfolio_website/static/js/453.aac68abc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db2c6893.css",
+    "static/js/main.ceefddac.js"
+  ]
+}
