@@ -11,6 +11,7 @@ function Home() {
             <Portfolio pagination={false}/><br/><br/>
             <Service/><br/><br/> 
             <AboutMe/><br/><br/>
+            <p className="display-6 text-center tabTitle">Testinomials</p>
             <Carousel/>
         </>
     );

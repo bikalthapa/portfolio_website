@@ -187,3 +187,11 @@
     width:100%;
     border-radius:10px;
 }
+.user_img{
+    border-radius:100%;
+    border:1px solid rgb(92, 91, 91);
+}
+.testinomialText{
+    font-weight:400;
+    text-align:justify;
+}

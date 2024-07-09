@@ -14,6 +14,14 @@ function Cards(props) {// Portfolio Cards
                         <small className="text-body-secondary">{props.data.uploadDate} &#x25CF; {props.data.userName}</small>
                     </p>
                     <h5 className="card-title">{title}</h5>
+                    <div className="vstack gap-0">
+                        <div className="p-2">
+                            <a className="btn btn-primary w-100" href={"https://bikalthapa.github.io/" + props.data.repoName} target="_blank">Demo</a>
+                        </div>
+                        <div className="p-2">
+                            <a className="btn btn-primary w-100" href={"https://github.com/bikalthapa/" + props.data.repoName} target="_blank">Source Code</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -22,19 +30,19 @@ function Cards(props) {// Portfolio Cards
 function LazyCards() {// Lazy loader cards
     return (
 
-                <div className="col">
-                    <div className="card lazy_projectCard">
-                        <div src="" className="lazy_image"></div>
-                        <div className="card-body h-100 p-0">
-                            <div className="lazy_projectType"></div>
-                            <div className="container">
-                                <p className="lazy_date">
-                                </p>
-                                <h5 className="lazy_title"></h5>
-                            </div>
-                        </div>
+        <div className="col">
+            <div className="card lazy_projectCard">
+                <div src="" className="lazy_image"></div>
+                <div className="card-body h-100 p-0">
+                    <div className="lazy_projectType"></div>
+                    <div className="container">
+                        <p className="lazy_date">
+                        </p>
+                        <h5 className="lazy_title"></h5>
                     </div>
                 </div>
+            </div>
+        </div>
     );
 }
 
@@ -99,12 +107,24 @@ function ServiceCard(props) {
     )
 }
 
-function Testimonial(props){
-    return(
+function Testimonial(props) {
+    return (
         <>
-            Hello Testimonial
+            <div className="card mb-3 border-primary" style={{maxWidth: "600px"}}>
+                <div className="row g-0 p-2">
+                    <div className="col-md-4">
+                        <img src={props.image} className="img-fluid user_img" alt="..."/>
+                    </div>
+                    <div className="col-md-8">
+                        <div className="card-body">
+                            <h5 className="card-title fs-2">{props.name}</h5>
+                            <p className="card-text testonimialText">{props.text}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }
 export default Cards;
-export { ProfileCards, ServiceCard, LazyCards ,Testimonial};
+export { ProfileCards, ServiceCard, LazyCards, Testimonial };
