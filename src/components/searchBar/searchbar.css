@@ -1,0 +1,51 @@
+.searchContainer{
+    position:absolute;
+    width:100px;
+    height:80%;
+    right:0px;
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid lightgrey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+@keyframes searchAnimation {
+    0%{
+        width:100px;
+    }
+    100%{
+        width:80%;
+    }
+}
+.searchContainer:hover{
+    width:80%;  
+    max-width:450px;  
+    animation-name:searchAnimation;
+    animation-duration:1.5s;
+    animation-iteration-count:1;
+}
+.searchBar:focus{
+    outline-width:0;
+    color:black;
+}
+.searchBar{
+    border-radius:20px;
+    width:90%;
+    border:none;
+    position:absolute;
+    right:0px;
+    color:white;
+    padding-left:20px;
+}
+.searchIcon{
+    position:absolute;
+    right:0px;
+    border:0px;
+    width:100%;
+    min-height:100%;
+    max-width:50px;
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgb(72, 72, 247) 0%, rgba(0,183,252,1) 100%);
+}
+
+.filterBtn{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
