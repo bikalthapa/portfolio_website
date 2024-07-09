@@ -37,7 +37,7 @@ function Portfolio(props) {
         "repoName": "quiz_app_react",
         "title": "Quiz Game in react js.",
         "description": "",
-        "thumbnail": require("../../../Images/project_img/quiz_app_react.png"),
+        "thumbnail": require("../../../Images/project_img/quiz-app-react.png"),
         "uploadDate": "2024-2-3",
         "demoLink": "",
         "srcLink": ""
