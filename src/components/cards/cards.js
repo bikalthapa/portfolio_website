@@ -84,7 +84,7 @@ function ProfileCards(props) {
 
     return (
         <div className="container profileCards">
-            <img src={require("../../Images/logo.jpg")} className="profile" />
+            <img src={require("../../Images/profile_picture.jpg")} className="profile" />
             <p className="greetings">Hi! There, I am</p>
             <p><span className="B">B</span>ikal <span className="T">T</span>hapa</p>
             <p className="writingAnimation">{anim}</p>
