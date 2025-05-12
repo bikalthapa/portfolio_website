@@ -1,0 +1,417 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Bikal Thapa | Full-Stack Developer Portfolio</title>
+  <meta name="title" content="Bikal Thapa | Full-Stack Developer Portfolio">
+  <meta name="description" content="Explore the portfolio of Bikal Thapa, a professional Full-Stack Developer specializing in modern, responsive, and user-friendly web applications.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thapabikal.com.np/">
+  <meta property="og:title" content="Bikal Thapa | Full-Stack Developer Portfolio">
+  <meta property="og:description" content="Explore the portfolio of Bikal Thapa, a professional Full-Stack Developer specializing in modern, responsive, and user-friendly web applications.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=500&auto=format">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://thapabikal.com.np/">
+  <meta property="twitter:title" content="Bikal Thapa | Full-Stack Developer Portfolio">
+  <meta property="twitter:description" content="Explore the portfolio of Bikal Thapa, a professional Full-Stack Developer specializing in modern, responsive, and user-friendly web applications.">
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=500&auto=format">
+
+  <!-- Canonical Tag -->
+  <link rel="canonical" href="https://thapabikal.com.np/">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo.jpg" type="image/x-icon" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS & Feather Icons -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css" />
+</head>
+
+
+<body>
+    <!-- Header Section -->
+    <header id="header" class="header">
+      <div class="container">
+        <a href="#home" class="logo">Bikal Thapa</a>
+        
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+          <i data-feather="menu"></i>
+        </button>
+        
+        <div id="mobile-menu" class="mobile-menu">
+          <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="profile-image">
+            <img src="images/avatar.jpg" alt="Professional Developer" class="avatar" loading="lazy">
+          </div>
+          
+          <h2 class="name">Hi, I'm <span>Bikal Thapa</span></h2>
+          <h1 class="title">Full-Stack Developer</h1>
+          <p class="subtitle">I build modern, responsive and user-friendly web applications using cutting-edge technologies.</p>
+          
+          <div class="cta-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+        
+        <a href="#projects" class="scroll-down">
+          <i data-feather="arrow-down"></i>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Explore my recent development work. Each project includes live demos and source code.</p>
+        
+        <div class="project-filters">
+          <div class="tabs">
+            <button class="tab-btn active" data-filter="all">All Projects</button>
+            <button class="tab-btn" data-filter="Website">Website</button>
+            <button class="tab-btn" data-filter="Game">Game</button>
+            <button class="tab-btn" data-filter="Utility">Utility</button>
+            <button class="tab-btn" data-filter="AI/ML">AI/ML</button>
+          </div>
+          
+          <div class="search-container">
+            <div class="search-icon"><i data-feather="search"></i></div>
+            <input type="text" id="project-search" placeholder="Search projects...">
+          </div>
+        </div>
+        
+        <div class="project-grid" id="project-grid">
+          <!-- Projects will be dynamically loaded here with JavaScript -->
+        </div>
+        
+        <div class="load-more">
+          <button id="load-more-btn" class="btn btn-outline">Load More Projects</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">A quick overview of the tools and technologies I work with.</p>
+
+        <div class="skills-tabs">
+          <!-- Tab Headers -->
+          <div class="tabs-list">
+            <button class="tab-btn active" data-tab="frontend">Frontend</button>
+            <button class="tab-btn" data-tab="backend">Backend</button>
+            <button class="tab-btn" data-tab="tools">Tools</button>
+          </div>
+
+          <!-- Frontend Tab -->
+          <div class="tab-content active" id="frontend">
+            <div class="skill-grid">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">HTML</span>
+                  <span class="skill-level">95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">CSS</span>
+                  <span class="skill-level">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-level">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">React</span>
+                  <span class="skill-level">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Tab -->
+          <div class="tab-content" id="backend">
+            <div class="skill-grid">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Node.js</span>
+                  <span class="skill-level">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Express</span>
+                  <span class="skill-level">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">MongoDB</span>
+                  <span class="skill-level">65%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 65%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools Tab -->
+          <div class="tab-content" id="tools">
+            <div class="skill-grid">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-level">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-level">95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Figma</span>
+                  <span class="skill-level">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <h2 class="section-title">Client Testimonials</h2>
+        <p class="section-subtitle">What clients say about working with me</p>
+        
+        <div class="testimonial-slider">
+          <div class="testimonial-track" id="testimonial-track">
+            <!-- Testimonials will be dynamically loaded here -->
+          </div>
+          
+          <div class="slider-controls">
+            <button id="prev-testimonial" class="slider-btn prev">
+              <i data-feather="chevron-left"></i>
+            </button>
+            <button id="next-testimonial" class="slider-btn next">
+              <i data-feather="chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Download Section -->
+    <section id="resume" class="section resume">
+      <div class="container">
+        <h2 class="section-title">My Resume</h2>
+        <p class="section-subtitle">Get a complete overview of my skills, experience, and education by downloading my resume.</p>
+        
+        <div class="resume-card">
+          <div class="resume-icon">
+            <i data-feather="file-text"></i>
+          </div>
+          
+          <h3>Professional Resume</h3>
+          <p>A comprehensive document showcasing my skills, experience, and achievements.</p>
+          
+          <a href="resume.pdf" download class="btn btn-primary" id="download-btn">
+            <i data-feather="download"></i>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project in mind or want to work together? Feel free to reach out.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+
+            <div class="info-item">
+              <div class="icon-container">
+                <i data-feather="mail"></i>
+              </div>
+              <div class="info-content">
+                <h4>Email</h4>
+                <a href="mailto:hello@example.com">bikalt40@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-container">
+                <i data-feather="phone"></i>
+              </div>
+              <div class="info-content">
+                <h4>Phone</h4>
+                <a href="tel:+1234567890">98******</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-container">
+                <i data-feather="map-pin"></i>
+              </div>
+              <div class="info-content">
+                <h4>Location</h4>
+                <p>Morang, Nepal</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <form id="contact-form" class="contact-form" action="https://formspree.io/f/xjkwabev" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Your email">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required placeholder="Subject">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+            </div>
+
+            <!-- Hidden field (honeypot) -->
+            <input type="text" name="_gotcha" style="display:none">
+
+
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h2 class="footer-logo">My Portfolio</h2>
+            <p>Crafting clean, modern web experiences with passion and precision.</p>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">
+              <i data-feather="github"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link">
+              <i data-feather="facebook"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link">
+              <i data-feather="instagram"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> Bikal Thapa. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+      <div class="toast-content">
+        <i data-feather="check-circle" class="toast-icon"></i>
+        <div class="toast-message">Message sent successfully!</div>
+      </div>
+    </div>
+
+    <!-- Feather Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <!-- Main JavaScript -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
